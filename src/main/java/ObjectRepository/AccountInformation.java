@@ -26,16 +26,14 @@ public class AccountInformation {
         driver.findElement(By.name("account.state")).sendKeys(sta);
         driver.findElement(By.name("account.zip")).sendKeys(zp);
         driver.findElement(By.name("account.country")).sendKeys(cntry);
-
-        // Your test code here
     }
 
     @DataProvider(name = "dp")
-    public Object[][] acc_info_Data() {
-        Object data1[][] = { { "First", "Last", "abc@gmail.com", "012345", "Rd no:22", "Apartment:2c", "NYC",
-                "New York", "1234", "USA", } };
+    public static Object[][] acc_info_Data() {
+        Object[][] data1 = { 
+            { "First", "Last", "abc@gmail.com", "012345", "Rd no:22", "Apartment:2c", "NYC", "New York", "1234", "USA", } 
+        };
 
         return data1;
     }
 }
-
