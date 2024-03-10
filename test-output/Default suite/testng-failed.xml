@@ -5,10 +5,7 @@
     <classes>
       <class name="ProjectEvaluation.EvProject.AppTest">
         <methods>
-          <include name="fillAccountInformation"/>
-          <include name="fillProfileInformation"/>
           <include name="registerNow"/>
-          <include name="fillUserInformation"/>
           <include name="setUp"/>
           <include name="launchBrowser"/>
           <include name="signIn"/>
