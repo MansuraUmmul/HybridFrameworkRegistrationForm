@@ -32,7 +32,7 @@ public class regValidation {
 		        driver.manage().window().maximize();		
 				TakesScreenshot ts=(TakesScreenshot)driver;
 				File src=ts.getScreenshotAs(OutputType.FILE);
-				File trg=new File("C:\\Users\\mummu\\eclipse-workspace\\EvProject\\screenshot\\fullpage.png");
+				File trg=new File("C:\\Users\\mummu\\eclipse-workspace\\PageObjectModelProject\\screenshot\\fullpage.png");
 				FileUtils.copyFile(src, trg);
 			}
 	

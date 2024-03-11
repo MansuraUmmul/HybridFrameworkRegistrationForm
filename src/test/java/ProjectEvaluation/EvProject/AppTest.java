@@ -31,7 +31,7 @@ public class AppTest
     	
         System.out.println("Setup Before Class");
         report = new ExtentReports();
-        ExtentSparkReporter sparkreporter = new ExtentSparkReporter("C:\\Users\\mummu\\eclipse-workspace\\EvProject\\target\\evreports.html");
+        ExtentSparkReporter sparkreporter = new ExtentSparkReporter("C:\\Users\\mummu\\eclipse-workspace\\PageObjectModelProject\\target\\evreports.html");
         test = report.createTest("Login Application");
         report.attachReporter(sparkreporter);
         data = new String[2];
