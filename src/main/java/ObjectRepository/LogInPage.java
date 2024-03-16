@@ -10,10 +10,9 @@ public class LogInPage {
 	
 	
 	//Constructor
-		public LogInPage(WebDriver driver)
-		{
-			this.driver=driver;
-		}
+	 public LogInPage(WebDriver driver) {
+	        this.driver=driver;
+	    }
 	
 	
 	public void reg_btn()

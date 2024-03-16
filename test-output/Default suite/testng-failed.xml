@@ -3,16 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ProjectEvaluation.EvProject.AppTest">
+      <class name="ProjectEvaluation.EvProject.RegistrationTest">
         <methods>
-          <include name="registerNow"/>
-          <include name="setUp"/>
-          <include name="launchBrowser"/>
-          <include name="signIn"/>
-          <include name="validateRegistration"/>
+          <include name="fillUserInformation"/>
           <include name="tearDown"/>
+          <include name="signIn"/>
+          <include name="setUp"/>
+          <include name="fillProfileInformation"/>
+          <include name="registerNow"/>
+          <include name="launchBrowser"/>
+          <include name="takescreenshot"/>
+          <include name="fillAccountInformation"/>
+          <include name="validateRegistration"/>
         </methods>
-      </class> <!-- ProjectEvaluation.EvProject.AppTest -->
+      </class> <!-- ProjectEvaluation.EvProject.RegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

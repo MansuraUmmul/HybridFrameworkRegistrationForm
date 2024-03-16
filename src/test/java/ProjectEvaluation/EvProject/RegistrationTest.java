@@ -19,7 +19,7 @@ import ObjectRepository.ProfileInformation;
 import ObjectRepository.UserInformation;
 import ObjectRepository.regValidation;
 
-public class AppTest 
+public class RegistrationTest 
 {   
     WebDriver driver;
     String data[];
@@ -27,6 +27,7 @@ public class AppTest
     ExtentTest test;
     
     @BeforeClass
+    (groups= {"Function Test", "Smoke Test", "Regression Test"})
     public void setUp() {  
     	
         System.out.println("Setup Before Class");
@@ -38,13 +39,14 @@ public class AppTest
     }
     
     @AfterClass
+    (groups= {"Function Test", "Smoke Test", "Regression Test"})
     public void tearDown() {        
         
         report.flush();
         driver.quit();
     }
     
-    @Test(priority = 1)
+    @Test(priority = 1, groups= {"Function Test", "Smoke Test", "Regression Test"})
     public void launchBrowser() throws IOException {
         
         CrossBrowserTest br = new CrossBrowserTest();            
@@ -52,7 +54,7 @@ public class AppTest
         test.log(Status.PASS, "User has launched the Browser");
     }
     
-    @Test(priority = 2, dependsOnMethods = "launchBrowser")
+    @Test(priority = 2, groups= {"Function Test", "Smoke Test", "Regression Test"})
     public void signIn() {
         
         HomePage hpg = new HomePage(driver);
@@ -60,7 +62,7 @@ public class AppTest
         test.log(Status.PASS, "User has clicked on 'sign in' button");
     }
     
-    @Test(priority = 3, dependsOnMethods = {"signIn"})
+    @Test(priority = 3, groups= {"Function Test", "Smoke Test", "Regression Test"})
     public void registerNow() {
         
         LogInPage lgn = new LogInPage(driver);
@@ -68,7 +70,7 @@ public class AppTest
         test.log(Status.PASS, "User has clicked on 'Register Now' button");
     }
     
-    @Test(priority = 4, dependsOnMethods = {"registerNow"})
+    @Test(priority = 4, groups= {"Function Test", "Smoke Test"})
     public void fillUserInformation() throws IOException {
         
         ExcelData excelData = new ExcelData();
@@ -81,7 +83,7 @@ public class AppTest
         test.log(Status.PASS, "User has successfully filled the 'User Information' section");
     }
     
-    @Test(priority = 5, dependsOnMethods = {"registerNow"})
+    @Test(priority = 5, groups= {"Function Test","Smoke Test"})
     public void fillProfileInformation() {
         
         ProfileInformation pinfo = new ProfileInformation(driver);
@@ -89,7 +91,7 @@ public class AppTest
         test.log(Status.PASS, "User has successfully filled the 'Profile Information' section");
     }
     
-    @Test(priority = 6, dependsOnMethods = {"registerNow"})
+    @Test(priority = 6, groups= {"Function Test", "Regression Test"})
     public void fillAccountInformation() {
         
         AccountInformation accountInfo = new AccountInformation(driver);            
@@ -97,7 +99,7 @@ public class AppTest
         test.log(Status.PASS, "User has successfully filled the 'Account Information' section");
     }
     
-    @Test(priority = 7, dependsOnMethods = {"registerNow"})
+    @Test(priority = 7, groups= {"Function Test", "Smoke Test", "Regression Test"})
     public void validateRegistration() throws InterruptedException, IOException {
         
         regValidation valreg = new regValidation(driver);
@@ -106,7 +108,7 @@ public class AppTest
 	    Assert.assertEquals(currentUrl, "https://petstore.octoperf.com/actions/Account.action");
         test.log(Status.PASS, "User has clicked on the 'Save Account Information' button, redirected to a 'Broken Link'");
     }
-    @Test(priority = 8, dependsOnMethods = {"registerNow"})
+    @Test(priority = 8, groups= {"Function Test"})
     public void takescreenshot() throws InterruptedException, IOException {
         
         regValidation valreg = new regValidation(driver);

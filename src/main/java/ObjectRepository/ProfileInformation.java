@@ -10,10 +10,9 @@ public class ProfileInformation {
 	By my_banner=By.xpath("//table[3]/tbody[1]/tr[4]/td[2]/input[1]");
 	
 	//Constructor
-			public ProfileInformation(WebDriver driver)
-			{
-				this.driver=driver;
-			}
+	public ProfileInformation(WebDriver driver) {
+		this.driver=driver;
+    }
 			
 			public void prof_info()
 			{

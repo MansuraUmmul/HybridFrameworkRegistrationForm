@@ -10,7 +10,7 @@ public class AccountInformation {
 
     // Constructor
     public AccountInformation(WebDriver driver) {
-        this.driver = driver;
+    	this.driver=driver;
     }
 
     @Test(dataProvider = "dp")

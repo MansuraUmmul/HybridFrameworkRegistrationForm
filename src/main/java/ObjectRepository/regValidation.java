@@ -16,10 +16,9 @@ public class regValidation {
 	By save_acc=By.xpath("(//input[@name='newAccount'])[1]");
 	
 	//Constructor
-			public regValidation(WebDriver driver)
-			{
-				this.driver=driver;
-			}
+	public regValidation(WebDriver driver) {
+		this.driver=driver;
+    }
 			
 	
 	public void reg_valid(){
