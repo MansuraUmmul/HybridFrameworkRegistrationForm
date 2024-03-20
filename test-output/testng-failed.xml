@@ -4,19 +4,18 @@
   <test thread-count="5" name="My Tests(failed)">
     <groups>
       <run>
-        <include name="Function Test"/>
+        <include name="Smoke Test"/>
       </run>
     </groups>
     <classes>
       <class name="ProjectEvaluation.EvProject.RegistrationTest">
         <methods>
           <include name="fillUserInformation"/>
+          <include name="tearDown"/>
           <include name="signIn"/>
+          <include name="setUp"/>
           <include name="fillProfileInformation"/>
           <include name="registerNow"/>
-          <include name="launchBrowser"/>
-          <include name="takescreenshot"/>
-          <include name="fillAccountInformation"/>
           <include name="validateRegistration"/>
         </methods>
       </class> <!-- ProjectEvaluation.EvProject.RegistrationTest -->

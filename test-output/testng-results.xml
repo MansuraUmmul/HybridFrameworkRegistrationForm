@@ -2,7 +2,7 @@
 <testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-16T12:50:11 EASST" name="My Suite" finished-at="2024-03-16T12:50:14 EASST" duration-ms="3591">
+  <suite started-at="2024-03-17T19:39:19 EASST" name="My Suite" finished-at="2024-03-17T19:39:24 EASST" duration-ms="4457">
     <groups>
       <group name="Regression Test">
         <method signature="RegistrationTest.launchBrowser()[pri:1, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" name="launchBrowser" class="ProjectEvaluation.EvProject.RegistrationTest"/>
@@ -27,37 +27,37 @@
         <method signature="RegistrationTest.validateRegistration()[pri:7, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" name="validateRegistration" class="ProjectEvaluation.EvProject.RegistrationTest"/>
       </group> <!-- Function Test -->
     </groups>
-    <test started-at="2024-03-16T12:50:11 EASST" name="My Tests" finished-at="2024-03-16T12:50:14 EASST" duration-ms="3591">
+    <test started-at="2024-03-17T19:39:19 EASST" name="My Tests" finished-at="2024-03-17T19:39:24 EASST" duration-ms="4457">
       <class name="ProjectEvaluation.EvProject.RegistrationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-16T12:50:11 EASST" name="setUp" finished-at="2024-03-16T12:50:11 EASST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-17T19:39:19 EASST" name="setUp" finished-at="2024-03-17T19:39:20 EASST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="launchBrowser()[pri:1, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-16T12:50:11 EASST" name="launchBrowser" finished-at="2024-03-16T12:50:13 EASST" duration-ms="1826" status="PASS">
+        <test-method signature="launchBrowser()[pri:1, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-17T19:39:20 EASST" name="launchBrowser" finished-at="2024-03-17T19:39:22 EASST" duration-ms="2127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="signIn()[pri:2, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-16T12:50:13 EASST" name="signIn" finished-at="2024-03-16T12:50:13 EASST" duration-ms="185" status="PASS">
+        <test-method signature="signIn()[pri:2, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-17T19:39:22 EASST" name="signIn" finished-at="2024-03-17T19:39:22 EASST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method signature="registerNow()[pri:3, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-16T12:50:13 EASST" name="registerNow" finished-at="2024-03-16T12:50:13 EASST" duration-ms="174" status="PASS">
+        <test-method signature="registerNow()[pri:3, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-17T19:39:22 EASST" name="registerNow" finished-at="2024-03-17T19:39:22 EASST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerNow -->
-        <test-method signature="fillUserInformation()[pri:4, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-16T12:50:13 EASST" name="fillUserInformation" finished-at="2024-03-16T12:50:14 EASST" duration-ms="611" status="PASS">
+        <test-method signature="fillUserInformation()[pri:4, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-17T19:39:22 EASST" name="fillUserInformation" finished-at="2024-03-17T19:39:23 EASST" duration-ms="833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillUserInformation -->
-        <test-method signature="fillProfileInformation()[pri:5, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-16T12:50:14 EASST" name="fillProfileInformation" finished-at="2024-03-16T12:50:14 EASST" duration-ms="64" status="PASS">
+        <test-method signature="fillProfileInformation()[pri:5, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-17T19:39:23 EASST" name="fillProfileInformation" finished-at="2024-03-17T19:39:23 EASST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillProfileInformation -->
-        <test-method signature="validateRegistration()[pri:7, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-16T12:50:14 EASST" name="validateRegistration" finished-at="2024-03-16T12:50:14 EASST" duration-ms="189" status="PASS">
+        <test-method signature="validateRegistration()[pri:7, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-17T19:39:23 EASST" name="validateRegistration" finished-at="2024-03-17T19:39:23 EASST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-16T12:50:14 EASST" name="tearDown" finished-at="2024-03-16T12:50:14 EASST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ProjectEvaluation.EvProject.RegistrationTest@8f4ea7c]" started-at="2024-03-17T19:39:23 EASST" name="tearDown" finished-at="2024-03-17T19:39:24 EASST" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
