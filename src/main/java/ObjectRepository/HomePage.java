@@ -3,13 +3,13 @@ package ObjectRepository;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class HomePage extends BasePage{
+public class HomePage{
 	WebDriver driver;
 	By sign_in=By.xpath("//a[normalize-space()='Sign In']");
 	
 	//Constructor
 	 public HomePage(WebDriver driver) {
-		 super(driver);
+		 this.driver=driver;
 	    }
 	
 	
